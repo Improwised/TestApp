@@ -13,4 +13,3 @@ services:
       - HOST=0.0.0.0
     volumes:
       - ./web/:/usr/src/app/
-  
