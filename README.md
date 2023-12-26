@@ -30,9 +30,12 @@ docker run -p 4173:4173 web:latest
 You can test Api on http://localhost:3000/sum?num1=5&num2=5  
 and web is accesible on http://localhost:4173/
 
+
 ##  Web 
  
-- This directory contain the Vue 3 
+- This directory contain the Vue 3
+
+- Node js  : Required Node.js version 18.0 or higher
 
 - Simple Application includes sum and substraction functionality
 
