@@ -21,7 +21,7 @@ function calculateSub() {
       <section class="py-5 border-bootom">
         <div class="container">
           <h1 class="text-center">
-            Welcome to TetApp
+            Welcome to TestApp
           </h1>
         </div>
       </section>
