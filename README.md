@@ -41,7 +41,7 @@ and web is accesible on http://localhost:4173/
 
 ### for run web
 
-```
+```bash
 cd web
 npm install
 npm run dev
@@ -57,6 +57,11 @@ it will redirect to http://localhost:5173
 
 it will redirect to http://localhost:4173
 
+### for fix lint
+
+```
+npm run lint
+```
 
 ##  Api 
  
@@ -74,6 +79,11 @@ node index.js
 
 it will redirect to http://localhost:3000
 
+### for fix lint
+
+```
+npm run lint
+```
 #### Route for sum
 
 ```

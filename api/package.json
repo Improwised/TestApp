@@ -7,7 +7,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel ../common/utils.js -d common",
-    "start": "npm run build && node index.js"
+    "start": "npm run build && node index.js",
+    "lint": "eslint --ext .js --fix ."
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +17,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.23.6",
-    "babel-cli": "^6.26.0"
+    "babel-cli": "^6.26.0",
+    "eslint": "^8.56.0"
   }
 }
