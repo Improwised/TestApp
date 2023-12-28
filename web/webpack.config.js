@@ -38,7 +38,7 @@ module.exports = {
   ],
   resolve: {
     alias: {
-      'common': '../../common/index.js'
+      'common': '../../common'
     }
   }
 }
