@@ -1,6 +1,6 @@
 {
   "name": "api",
-  "type": "CommonJS",
+  "type": "commonjs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

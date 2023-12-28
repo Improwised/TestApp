@@ -1,10 +1,13 @@
 module.exports = {
 	'env': {
 		'browser': true,
-		'node': true,
-		'es6': true
+		'es2021': true,
+		'node': true
 	},
-	'extends': 'eslint:recommended',
+	'extends': [
+		'eslint:recommended',
+		'plugin:react/recommended'
+	],
 	'overrides': [
 		{
 			'env': {
@@ -22,6 +25,9 @@ module.exports = {
 		'ecmaVersion': 'latest',
 		'sourceType': 'module'
 	},
+	'plugins': [
+		'react'
+	],
 	'rules': {
 		'indent': [
 			'error',

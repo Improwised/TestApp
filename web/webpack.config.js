@@ -1,11 +1,13 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const ESLintPlugin = require('eslint-webpack-plugin')
 module.exports = {
-  mode: "development",
-  entry: "/src/index.js", // main js
+  mode: 'development',
+  entry: '/src/index.js', // main js
   output: {
-    path: path.resolve(__dirname, "dist"), // output folder
-    publicPath: "/",
+    path: path.resolve(__dirname, 'dist'), // output folder
+    publicPath: '/',
+    filename: 'bundle.js'
   },
   module: {
     rules: [
@@ -22,30 +24,21 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          "style-loader",
-          "css-loader", // for styles
+          'style-loader',
+          'css-loader', // for styles
         ],
-      },
-      {
-        test: /\.?js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-          options: {
-            presets: ["@babel/preset-env", "@babel/preset-react"],
-          },
-        },
-      },
+      }
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/index.html", // base html
+      template: './src/index.html', // base html
     }),
+    new ESLintPlugin(),
   ],
   resolve: {
     alias: {
-      "common": "../../common/index.js"
+      'common': '../../common/index.js'
     }
   }
-};
+}
