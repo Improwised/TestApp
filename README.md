@@ -24,7 +24,7 @@ docker build -t web -f ./web/Dockerfile .
 ```
 
 ```
-docker run -p 4173:4173 web:latest
+docker run -p 8080:8080 web:latest
 ```
 
 You can test Api on http://localhost:3000/sum?num1=5&num2=5  
