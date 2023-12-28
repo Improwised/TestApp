@@ -1,4 +1,4 @@
-import utils from './common/utils.js'
+import {sum,subtract} from './common/index.js';
 import express from 'express'
 const app = express()
 const port = 3000
@@ -14,7 +14,7 @@ app.get('/sum', (req, res) => {
 	res.json({
 		'Number 1': req.query.num1,
 		'Number 2': req.query.num2,
-		'Answer': utils.sum(req.query.num1, req.query.num2)
+		'Answer': sum(req.query.num1, req.query.num2)
 	})
 })
 
@@ -25,7 +25,7 @@ app.get('/sub', (req, res) => {
 	res.json({
 		'Number 1': req.query.num1,
 		'Number 2': req.query.num2,
-		'Answer': utils.sub(req.query.num1, req.query.num2)
+		'Answer': subtract(req.query.num1, req.query.num2)
 	})
 })
 

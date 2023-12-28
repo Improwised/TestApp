@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel ../common/utils.js -d common",
+    "build": "babel ../common -d common",
     "start": "npm run build && node index.js",
     "lint": "eslint --ext .js --fix ."
   },
