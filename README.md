@@ -33,11 +33,11 @@ and web is accesible on http://localhost:4173/
 
 ##  Web 
  
-- This directory contain the Vue 3
+- This directory contain the React and webpack
 
 - Node js  : Required Node.js version 18.0 or higher
 
-- Simple Application includes sum and substraction functionality
+- Simple Application includes sum and subtract math functions
 
 ### for run web
 
@@ -46,16 +46,16 @@ cd web
 npm install
 npm run dev
 ```
-it will redirect to http://localhost:5173
+it will redirect to http://localhost:8080
 
 ### for build web
 
 
+```npm run build```
+
 ```npm run start```
 
-```npm run preview```
-
-it will redirect to http://localhost:4173
+it will redirect to http://localhost:8080
 
 ### for fix lint
 
