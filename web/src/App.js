@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import utils from 'common';
+import {sum,subtract} from 'common';
+
 function App() {
   const [inputValues, setInputValues] = useState({
     value1: 0,
@@ -21,14 +22,13 @@ function App() {
   const calculateSum = () => {
     const value1 = parseFloat(inputValues.value1) || 0;
     const value2 = parseFloat(inputValues.value2) || 0;
-    const result = value1 + value2;
-    console.log(utils.fun());
+    const result = sum(value1,value2);
     setResult(result);
   };
   const calculateSub = () => {
     const value1 = parseFloat(inputValues.value1) || 0;
     const value2 = parseFloat(inputValues.value2) || 0;
-    const result = value1 - value2;
+    const result = subtract(value1,value2);
     setResult(result);
   };
   return (
