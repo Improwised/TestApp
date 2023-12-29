@@ -38,6 +38,9 @@ module.exports = {
 		'semi': [
 			'error',
 			'never'
+		],
+		'space-infix-ops': [
+			'error'
 		]
 	}
 }
