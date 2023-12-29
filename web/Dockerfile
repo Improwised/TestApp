@@ -1,5 +1,5 @@
-# Base node 12 image
-FROM node:18-alpine
+# Base node 20 image
+FROM node:20-alpine
 
 
 WORKDIR /usr/src/app
@@ -26,5 +26,5 @@ RUN npm run build
 RUN mv .env.example .env
 
 
-# Start nuxt app use if ngingx and supervisor no required
+# Starts react app
 CMD [ "npm", "run", "start" ]
