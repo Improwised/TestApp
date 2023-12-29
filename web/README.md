@@ -1,29 +1,29 @@
-# web
+# Getting Started with React App
 
-This template should help get you started developing with Vue 3 in Vite.
+This is starter project, which based on React 18 and Webpack
 
-## Recommended IDE Setup
+After cloning this project. You need to run below commands.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Install the node modules - 
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
+```
+npm 1nstall
 ```
 
-### Compile and Hot-Reload for Development
+Bundle the project - 
+```
+npm run build
+```
 
-```sh
+Run bundle the project - 
+```
+npm run start
+```
+
+If you want to check the preview. Simply run the below command. Open dev server -
+
+```
 npm run dev
 ```
 
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+Then open the URL on your browser. (http://localhost:8080/)
