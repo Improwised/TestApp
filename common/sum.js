@@ -2,9 +2,7 @@
 * @param {number} value1 some number e.g 12
 * @param {number} value2 some number e.g 15
 * @type {number}
-* @typedef {import('../../common') } of sum method
 * @returns sum of two number
 */
 const sum = (value1, value2) => parseFloat(value1) + parseFloat(value2);
 module.exports= sum;
-
