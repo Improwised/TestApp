@@ -2,7 +2,7 @@
 
 ## Common
 
-- This directory contain the common utils.js file which is used in vue3 web & express api application
+- This directory contains the common utils.js file which is used in ReactJs web & express api application
 
 
 ## Docker
