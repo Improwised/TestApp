@@ -1,0 +1,19 @@
+{
+  // This file is required for VSCode to understand webpack aliases
+  "module": "es6",
+  "moduleResolution": "node",
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "jsx": "preserve",
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+
+    "baseUrl": ".",
+    // Relative to "baseUrl"
+    "paths": {
+      "common/*": ["./common/*"],
+    }
+  }
+}
