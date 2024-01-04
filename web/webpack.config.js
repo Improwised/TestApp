@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ESLintPlugin = require('eslint-webpack-plugin')
 module.exports = {
   mode: 'development',
-  entry: '/src/index.js', // main js
+  entry: '/src/index.tsx', // main js
   output: {
     path: path.resolve(__dirname, 'dist'), // output folder
     publicPath: '/',
@@ -32,13 +32,13 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html', // base html
+      template: './public/index.html', // base html
     }),
     new ESLintPlugin(),
   ],
   resolve: {
     alias: {
-      'common': '../../common'
+      'common': '../common'
     }
   }
 }
